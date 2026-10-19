@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101a2b">
+  <meta name="description" content="Test your knowledge with a fresh computer science and web development quiz.">
+  <title>CEO QUIZ APP</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="CEO Quiz App home">
+      <span class="brand-mark" aria-hidden="true">C</span>
+      <span>CEO <span class="brand-accent">QUIZ APP</span></span>
+    </a>
+    <span class="header-label">WEEK 24 SIWES PRACTICAL</span>
+  </header>
+
+  <main class="page-content">
+    <section class="intro" aria-labelledby="page-title">
+      <p class="eyebrow">LEARN · THINK · EXCEL</p>
+      <h1 id="page-title">Put your knowledge<br class="desktop-break"> to the test.</h1>
+      <p class="intro-copy">Ten fresh questions on computer science and web development. Take your time and choose the best answer.</p>
+    </section>
+
+    <section class="quiz-card" aria-label="Computer science quiz">
+      <div class="quiz-topline">
+        <span class="quiz-tag"><span class="tag-dot" aria-hidden="true"></span> KNOWLEDGE CHECK</span>
+        <span id="question-counter" class="question-counter" aria-live="polite">Question 1 of 10</span>
+      </div>
+
+      <div class="progress-track" role="progressbar" aria-label="Quiz progress" aria-valuemin="0" aria-valuemax="10" aria-valuenow="1">
+        <div id="progress-fill" class="progress-fill"></div>
+      </div>
+
+      <div id="quiz-content">
+        <p id="question-category" class="question-category"></p>
+        <h2 id="question-text" class="question-text"></h2>
+        <p class="select-hint">Select one answer</p>
+        <div id="answer-options" class="answer-options" role="group" aria-labelledby="question-text"></div>
+
+        <p id="answer-status" class="answer-status" aria-live="polite"></p>
+
+        <nav class="quiz-navigation" aria-label="Quiz navigation">
+          <button id="previous-button" class="button button-secondary" type="button">
+            <span aria-hidden="true">&larr;</span> Previous
+          </button>
+          <button id="next-button" class="button button-primary" type="button">
+            Next question <span aria-hidden="true">&rarr;</span>
+          </button>
+        </nav>
+      </div>
+
+      <section id="results" class="results" aria-live="polite" hidden>
+        <div id="score-icon" class="score-icon" aria-hidden="true">★</div>
+        <p class="eyebrow">QUIZ COMPLETE</p>
+        <h2 id="result-heading">Your results</h2>
+        <p class="score-display"><span id="score-value">0</span><span class="score-divider">/</span><span id="score-total">10</span></p>
+        <p id="score-message" class="score-message"></p>
+        <p id="unanswered-message" class="unanswered-message" hidden></p>
+        <p class="percentage-display"><span id="score-percentage">0%</span> score</p>
+        <button id="restart-button" class="button button-primary restart-button" type="button">Start new quiz</button>
+
+        <div class="review-heading">
+          <div>
+            <p class="eyebrow">ANSWER KEY</p>
+            <h3>Review your answers</h3>
+          </div>
+          <span id="review-summary" class="review-summary"></span>
+        </div>
+        <ol id="answer-review" class="answer-review"></ol>
+      </section>
+    </section>
+
+    <p class="page-note"><span aria-hidden="true">✦</span> Every question is a chance to learn something new.</p>
+  </main>
+
+  <footer class="site-footer">Built for learning <span aria-hidden="true">·</span> CEO QUIZ APP</footer>
+</body>
+</html>
